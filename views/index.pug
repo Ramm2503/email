@@ -1,0 +1,29 @@
+html 
+    -var two="Welcome "
+    -var arr=['c','c++','java','python']
+    head 
+        title=title 
+        
+    body 
+        h1.one Welcome to my template engine.
+        p#para this is paragraph.
+        a(href="http://www.google.co.in") Google 
+        ul  
+            each val in arr
+                 li=val
+        div 
+            input(
+                
+                 type="text"
+                placeholder="Enter Name"
+            )
+        div 
+            h1=two
+        div 
+            h1(style={color:'red'})=message
+
+        div 
+            if(user)
+                h1 hello #{user.name}
+            else 
+                h1 oops!
